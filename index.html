@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+   <div class="container">
+    <h3>富文本编辑器</h3>
+    <div class="option">
+      <!-- 加粗 -->
+      <button id="bold" class="option-button">
+        <i class="fa-solid fa-bold"></i>
+      </button>
+      <!-- 斜体 -->
+      <button id="italic" class="option-button">
+        <i class="fa-solid fa-italic"></i>
+      </button>
+      <!-- 下划线 -->
+      <button id="underline" class="option-button">
+        <i class="fa-solid fa-underline"></i>
+      </button>
+      <!-- 删除线 -->
+      <button id="strikethrough" class="option-button">
+        <i class="fa-solid fa-strikethrough"></i>
+      </button>
+      <!-- 上标 -->
+      <button id="superscript" class="option-button">
+        <i class="fa-solid fa-superscript"></i>
+      </button>
+      <!-- 下标 -->
+      <button id="subscript" class="option-button">
+        <i class="fa-solid fa-subscript"></i>
+      </button>
+      <!-- 有序列表 -->
+      <button id="insertOrderedList" class="option-button">
+        <i class="fa-solid fa-list-ol"></i>
+      </button>
+      <!-- 无序列表 -->
+      <button id="insertOrderedList" class="option-button">
+        <i class="fa-solid fa-list-ul"></i>
+      </button>
+      <!-- 左对齐 -->
+      <button id="justifyleft" class="option-justify">
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+      <!-- 居中对齐 -->
+      <button id="justifycenter" class="option-justify">
+        <i class="fa-solid fa-align-center"></i>
+      </button>
+      <!-- 右对齐 -->
+      <button id="justifyright" class="option-justify">
+        <i class="fa-solid fa-align-right"></i>
+      </button>
+      <!-- 标题级别 -->
+      <select id="formatBlock" class="option-select">
+        <option value="H1">H1</option>
+        <option value="H2">H2</option>
+        <option value="H3">H3</option>
+      </select>
+      <!-- 字号大小 -->
+       <select  id="fontsize" class="option-select">
+       </select>
+       <!-- 字体样式 -->
+       <select id="fontname" class="option-select">
+       </select>
+       <!-- 字体颜色 -->
+       <form>
+        <input type="color" id="foreColor" class="option-select">
+        <label for="fontcolor" style="font-size:10px">字体颜色</label>
+       </form>
+       <!-- 背景颜色 -->
+       <form>
+        <input type="color" id="backColor" class="option-select" value="#ffffff">
+        <label for="bagcolor" style="font-size:10px">背景颜色</label>
+       </form>
+    </div>
+    <!-- 书写区域 -->
+    <!-- contenteditable打开元素的编辑模式 -->
+    <div class="content" contenteditable="true"></div>
+   </div>
+</body>
+</html>
